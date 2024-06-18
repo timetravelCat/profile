@@ -1,25 +1,24 @@
-### Site metadata ###
-
 site_name: timetravelCat's profile and tech docs
-site_description: A profile and tech docs site for timetravelCat
-site_url: https://timetravelCat.github.io/profile/
-repo_url: https://github.com/timetravelCat/profile
-
-### Build settings ###
-
 theme:
-    name: dracula
-    
-plugins:
-  - search
+  name: dracula
+  features:
+    - navigation.tabs
+    - navigation.instant
 
 markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
   - pymdownx.arithmatex:
       generic: true
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
