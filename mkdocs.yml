@@ -7,8 +7,9 @@ repo_url: https://github.com/timetravelCat/profile
 
 ### Build settings ###
 
-theme: dracula
-
+theme:
+    name: dracula
+    
 plugins:
   - search
 
