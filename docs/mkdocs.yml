@@ -1,15 +1,15 @@
 ### Site metadata ###
 
-site_name: MkDocs Quickstart
-site_description: Starter template for a MkDocs docs site on GH Pages - including CI
-site_url: https://michaelcurrin.github.io/mkdocs-quickstart/
+site_name: timetravelCat's profile and tech docs
+site_description: A profile and tech docs site for timetravelCat
+site_url: https://timetravelCat.github.io/profile/
 
-repo_url: https://github.com/MichaelCurrin/mkdocs-quickstart
+repo_url: https://github.com/timetravelCat/profile
 edit_uri: edit/master/docs/docs
 
 ### Build settings ###
 
-theme: readthedocs
+theme: dracula
 
 nav:
   - Home: index.md
@@ -21,3 +21,15 @@ nav:
       - Advanced: tutorial/advanced.md
       - Usage: tutorial/usage.md
       - Deploy: tutorial/deploy.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
